@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-challenge-100';
+  public toolbarTitle = 'Title at start';
+
+  onToolbarTitleChange(newTitle: string) {
+    this.toolbarTitle = newTitle;
+  }
 }
